@@ -1,4 +1,89 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* raleway-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets//fonts/raleway-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* raleway-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/raleway-v28-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+
+/*BASIC STYLE START*/
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/*BASIC STYLE END*/
+
+
+
+/*HEADER STYLE START*/
+.nav_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav_item {
+    margin-right: 32px;
+    padding: 10px 34px;
+    border: white 2px solid;
+    border-radius: 30px;
+    
+}
+
+.nav_link {
+    font-family: 'Raleway';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav_link:hover, .nav_link:focus, .nav_link:active {
+    color: orangered;
+}
+
+.nav_item:last-child {
+    margin-right: 0px;
+}
+/*HEADER STYLE END*/
