@@ -65,6 +65,7 @@ h2 {
     font-style: bold;
     font-weight: 700;
     font-size: 40px;
+    color: #FE4B00;
 }
 
 p {
@@ -73,13 +74,22 @@ p {
     font-weight: 400;
 }
 
+a:hover, a:focus, a:active {
+    color: #FE4B00;
+}
+
 .section_container_one, .section_container_two {
     max-width: 450px;
+}
+
+.section_container_one {
+    margin-right: 200px;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -111,10 +121,6 @@ header {
     font-style: bold;
     font-weight: 700;
     font-size: 16px;
-}
-
-.nav_link:hover, .nav_link:focus, .nav_link:active {
-    color: #FE4B00;
 }
 
 .nav_item:last-child {
@@ -176,6 +182,9 @@ header {
 
 
 /*CONTACTS STYLE START*/
+.contacts {
+    margin-bottom: 90px;
+}
 .contacts_title  {
     font-family: 'Raleway';
     font-style: bold;
@@ -200,3 +209,24 @@ header {
     font-weight: 400;
 }
 /*CONTACTS STYLE END*/
+
+
+/*SKILLS STYLES START*/
+.skills {
+    margin-bottom: 90px;
+}
+/*SKILLS STYLES END*/
+
+
+.code {
+    margin-bottom: 40px;
+}
+
+
+.about {
+    margin-bottom: 125px;
+}
+
+.projects {
+    margin-bottom: 125px;
+}
