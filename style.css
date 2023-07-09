@@ -4,7 +4,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('./assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
   /* raleway-regular - latin */
@@ -13,7 +13,7 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: url('./assets//fonts/raleway-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('./assets/fonts/raleway-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* raleway-700 - latin */
   @font-face {
@@ -21,7 +21,7 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/raleway-v28-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('./assets/fonts/raleway-v28-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
 
@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    max-width: 1920px;
+    max-width: 1520px;
     margin: 0 auto;
     font-weight: normal;
     font-style: normal;
@@ -42,6 +42,10 @@ body {
     background-color: black;
     color: white;
 }
+
+*, *::before, *::after {
+    box-sizing: initial;
+  }
 
 .container {
     max-width: 1440px;
@@ -57,6 +61,9 @@ a {
 
 
 /*HEADER STYLE START*/
+header {
+    margin-bottom: 100px;
+}
 .nav_list {
     display: flex;
     flex-wrap: wrap;
@@ -75,15 +82,70 @@ a {
 .nav_link {
     font-family: 'Raleway';
     font-style: bold;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
 }
 
 .nav_link:hover, .nav_link:focus, .nav_link:active {
-    color: orangered;
+    color: #FE4B00;
 }
 
 .nav_item:last-child {
     margin-right: 0px;
 }
 /*HEADER STYLE END*/
+
+
+
+/*NAME STYLE START*/
+.name_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.my_photo {
+    width: 508px;
+    height: 564px;
+    border-radius: 5px;
+}
+
+.my_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 35px;
+}
+
+.name_title {
+    font-family: 'Raleway';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 13px 28px;
+    margin-bottom: 30px;
+    border: white 2px solid;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.sub_title {
+    font-family: 'Raleway';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 54px;
+    max-width: 320px;
+    color: #FE4B00;
+    padding: 0;
+    margin: 0;
+}
+/*NAME STYLE END*/
+
+
+/*CONTACTS STYLE START*/
+.icon {
+    width: 16px;
+    height: 16px;
+}
+/*CONTACTS STYLE END*/
