@@ -50,7 +50,7 @@ body {
   }
 
 .container {
-    max-width: 1290px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -90,9 +90,8 @@ a:hover, a:focus, a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 60px;
 }
-
-
 /*BASIC STYLE END*/
 
 
@@ -152,7 +151,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 25px;
+    margin-left: 120px;
 }
 
 .name_title {
@@ -211,6 +210,7 @@ header {
 /*CONTACTS STYLE END*/
 
 
+
 /*SKILLS STYLES START*/
 .skills {
     margin-bottom: 90px;
@@ -218,15 +218,45 @@ header {
 /*SKILLS STYLES END*/
 
 
+
+/*CODE STYLES START*/
 .code {
     margin-bottom: 40px;
 }
+/*CODE STYLES END*/
 
 
+
+/*ABOUT STYLES START*/
 .about {
     margin-bottom: 125px;
 }
+/*ABOUT STYLES END*/
 
+
+
+/*PROJECTS STYLES START*/
 .projects {
     margin-bottom: 125px;
 }
+/*PROJECTS STYLES END*/
+
+
+
+/*FOOTER STYLE START*/
+footer {
+    padding-bottom: 40px;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rs_logo {
+    width: 100px;
+    height: 37px;
+}
+/*FOOTER STYLE END*/
